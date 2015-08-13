@@ -13,9 +13,9 @@
     <header class="navbar navbar-nav navbar-fixed-top">
         <div class="container">
         <ul class="nav nav-tabs">
-            <li class="btn"><a href="#">Home</a></li>
-            <li class="btn"><a href="#">Comic</a></li>
-            <li class="btn"><a href="#">Characters</a></li>
+            <li class="btn"><a href="/">Home</a></li>
+            <li class="btn"><a href="/comic">Comic</a></li>
+            <li class="btn"><a href="/characters">Characters</a></li>
         </ul>
         <a href='/'><img class="header-image" alt="Ninja Star Logo" src="img/header.png"></a>
         </div>
@@ -28,15 +28,10 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
         fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
+        
     <div class="row container" id="main-content">
         
-        <div class="well col-md-10 col-md-offset-1" ng-controller="ninjaStarController">
-        
-            <h1>Ninja Star Comic</h1>
-            <ul id="comic-list" ng-repeat="comic in comics">
-                <li><a ng-href="img/{{ comic.href }}" data-lightbox="ninjastar" data-title="{{ comic.title }}">{{ comic.date }} - {{ comic.title }}</a></li>
-            </ul>
-        </div>
+        <div ng-view></div>
         
     </div>
     

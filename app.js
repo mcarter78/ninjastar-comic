@@ -1,5 +1,30 @@
 var app = angular.module('ninjaStar', []);
 
+
+// Fix this code for partial routing
+
+// var routing = angular.module('routing', [
+//     'ngRoute'    
+// ]);
+
+// routing.config(['$routeProvider',
+//     function($routeProvider) {
+//         $routeProvider.
+//             when('/characters', {
+//                 templateUrl: 'partials/characters.html'
+//             }).
+//             when('/', {
+//                 templateUrl: 'partials/welcome.html'
+//             }).
+//             when('/comic', {
+//                 templateUrl: 'partials/comic-list.html'
+//             }).
+//             otherwise({
+//                 redirectTo: '/'
+//             });
+//     }
+// ]);
+
 app.controller('ninjaStarController', function($scope){
     $scope.comics = [
         {
