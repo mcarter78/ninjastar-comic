@@ -1,4 +1,5 @@
-var app = angular.module('ninjaStar', []);
+var app = angular.module('ninjaStar', ['ngRoute']);
+
 
 
 // Fix this code for partial routing
@@ -7,23 +8,26 @@ var app = angular.module('ninjaStar', []);
 //     'ngRoute'    
 // ]);
 
-// routing.config(['$routeProvider',
-//     function($routeProvider) {
-//         $routeProvider.
-//             when('/characters', {
-//                 templateUrl: 'partials/characters.html'
-//             }).
-//             when('/', {
-//                 templateUrl: 'partials/welcome.html'
-//             }).
-//             when('/comic', {
-//                 templateUrl: 'partials/comic-list.html'
-//             }).
-//             otherwise({
-//                 redirectTo: '/'
-//             });
-//     }
-// ]);
+app.config(function($routeProvider) {
+    
+        $routeProvider
+            .when('/characters', {
+                controller: 'ninjaStarController',
+                templateUrl: 'partials/characters.html'
+            })
+            .when('/', {
+                controller: 'ninjaStarController',
+                templateUrl: 'partials/welcome.html'
+            })
+            .when('/comic', {
+                controller: 'ninjaStarController',
+                templateUrl: 'partials/comic-list.html'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
+//            $locationProvider.html5Mode(true);
+});
 
 app.controller('ninjaStarController', function($scope){
     $scope.comics = [
