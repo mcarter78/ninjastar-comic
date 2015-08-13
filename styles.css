@@ -98,6 +98,14 @@ body ul {
     padding-top: 160px;
 }
 
+.lb-data .lb-caption {
+    font-size: 1.5em;
+}
+
+.lb-details {
+    margin-top: 4px;
+}
+
 /* Footer */
 
 .footer {
