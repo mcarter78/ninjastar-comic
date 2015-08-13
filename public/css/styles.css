@@ -1,7 +1,7 @@
 /* Navbar */
 
 .navbar {
-    background-image: url("img/header-bg.png");
+    background-image: url("../img/header-bg.png");
     background-repeat: repeat-x;
     width: 100%;
 }
