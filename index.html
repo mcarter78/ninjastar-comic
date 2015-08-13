@@ -33,11 +33,7 @@
         
             <h1>Ninja Star Comic</h1>
             <ul id="comic-list" ng-repeat="comic in comics">
-                <li><a href="img/2013-03-22.jpg" data-lightbox="ninjastar" data-title="{{ comic.title }}">03.22.2013 - {{ comic.title }}</a></li>
-                <li><a href="img/2013-03-15.jpg" data-lightbox="ninjastar" data-title="A Trombone Interlude">03.15.2013 - A Trombone Interlude</a></li>
-                <li><a href="img/2013-03-08.jpg" data-lightbox="ninjastar" data-title="The Summons III">03.08.2013 - The Summons III</a></li>
-                <li><a href="img/2013-03-01.jpg" data-lightbox="ninjastar" data-title="The Summons II">03.01.2013 - The Summons II</a></li>
-                <li><a href="img/2013-02-22.jpg" data-lightbox="ninjastar" data-title="The Summons I">02.22.2013 - The Summons I</a></li>
+                <li><a ng-href="img/{{ comic.href }}" data-lightbox="ninjastar" data-title="{{ comic.title }}">{{ comic.date }} - {{ comic.title }}</a></li>
             </ul>
         </div>
         
