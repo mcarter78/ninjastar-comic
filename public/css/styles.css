@@ -47,10 +47,13 @@
 
 body {
     background-color: #1f1f1f;
+    height: 100%;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
+
 
 .well {
     background-color: #1f1f1f;
@@ -72,6 +75,11 @@ body ul {
     padding: 0;
 }
 
+#comic-well {
+    height: 680px;
+    overflow-y: scroll;
+}
+
 #comic-list {
     padding-left: 20px;
     text-align: left;
@@ -90,8 +98,11 @@ body ul {
 }
 
 #main-content {
+    height: 100%;
     margin: 0 auto;
     padding-top: 156px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 #lightbox.lightbox {
@@ -111,6 +122,8 @@ body ul {
 .footer {
     display: block;
     clear: both;
+    padding-left: 15px;
+    background-color: #1f1f1f;
 }
 
 .copyright, .fb-like {
