@@ -206,4 +206,5 @@ app.controller('ninjaStarController', function($scope){
             href : "2011-09-21.jpg"
         },
     ];
+    
 });
