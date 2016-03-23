@@ -2,10 +2,10 @@
   "name": "ninjastar-comic",
   "version": "1.0.0",
   "description": "Website for NinjaStar Comic by Scott Carter",
-  "main": "/js/app.js",
+  "main": "js/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node /js/app.js"
+    "start": "node js/app.js"
   },
   "repository": {
     "type": "git",
