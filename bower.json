@@ -1,0 +1,24 @@
+{
+  "name": "ninjastar-comic",
+  "homepage": "https://github.com/mcarter78/ninjastar-comic",
+  "authors": [
+    "mcarter78 <sjsharksftw@gmail.com>"
+  ],
+  "description": "Website for NinjaStar Comic by Scott Carter",
+  "main": "js/app.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lightbox2": "~2.8.1",
+    "angular": "^1.5.2",
+    "angular-route": "^1.5.2",
+    "bootstrap-css-only": "^3.3.6"
+  }
+}
