@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Comic = require('../api/models/comic');
-mongoose.connect('mongodb://localhost/ninjaStar');
+mongoose.connect('mongodb://heroku_4t7wf0ql:dim63brs292l6irb85kfs6sd2i@ds025419.mlab.com:25419/heroku_4t7wf0ql');
 
 comics = [
     {
