@@ -1,0 +1,6 @@
+<h1>Ninja Star Comic</h1>
+<ul id="comic-list" ng-repeat="comic in comics">
+  <li><a ng-href="{{ comic.image }}" data-lightbox="ninjastar" data-title="{{ comic.title }}">
+    {{ comic.date }} - {{ comic.title }}
+  </a></li>
+</ul>

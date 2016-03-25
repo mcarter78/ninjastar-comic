@@ -12,7 +12,7 @@
     padding: 0;
     padding-top: 45px;
     float: left;
-    
+
 }
 
 .nav-tabs li.btn {
@@ -30,7 +30,7 @@
     margin: 0;
 }
 
-.nav-tabs li.btn a:hover, 
+.nav-tabs li.btn a:hover,
 .nav-tabs li.btn a:focus {
     text-decoration: none;
     border: none;

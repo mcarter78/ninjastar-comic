@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="ninjaStar">
+  <head>
+    <title>Ninja Star Comic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar navbar-nav navbar-fixed-top">
+      <div class="container">
+        <ul class="nav nav-tabs">
+          <li class="btn"><a href="/">Home</a></li>
+          <li class="btn"><a href="/comics">Comic</a></li>
+          <li class="btn"><a href="/characters">Characters</a></li>
+        </ul>
+        <a href='/'><img class="header-image" alt="Ninja Star Logo" src="img/header.png"></a>
+      </div>
+    </header>
+      <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+          fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+    <div class="row container" id="main-content">
+      <div class="well col-md-10 col-md-offset-1" id="comic-well">
+        <div ui-view></div>
+      </div>
+    </div>
+
+    <footer class="nav navbar-fixed-bottom">
+      <div class="footer">
+        <p class="copyright">Copyright &copy; 2008-2015 Scott Carter.</p>
+        <div class="fb-like" data-href="https://www.facebook.com/ninjastarcomic" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
